@@ -1,0 +1,285 @@
+/*Diāna Ragause dr24028*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    /* position: sticky; */
+    background-color: rgb(252, 250, 247);
+    border-bottom: 1px solid #ccc;
+    padding: 0px 90px;
+}
+
+.header-top {
+    display: flex;
+    /* position: sticky; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.search-box input {
+    border: 1px solid #333;
+    border-radius: 25px;
+    width: 450px;
+    height: 30px
+}
+
+.links img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    
+}
+.links img:hover {
+    opacity: 70%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.nav-bar > li > a {
+    color: #000;
+    font-size: 12px;
+    padding: 16px 15px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    font-size: 12px;
+    background-color: rgb(99, 82, 67);
+    color: rgb(252, 250, 247);
+    padding: 0 15px 15px;
+}
+
+li a:hover, .sub-menu:hover{
+    background-color: rgb(99, 82, 67);
+    color: rgb(252, 250, 247);
+}
+
+.has-sub-menu:hover .sub-menu {
+    display: block;
+}
+
+.no-sub-menu:hover a:hover{
+    color: rgb(174, 224, 174);
+}
+
+/* Discount Section */
+#discounts {
+    display: flex;
+    padding: 0;
+    background-color: rgb(192,176,161);
+    height: 450
+    px;
+    align-items: center;
+}
+
+.section-col img {
+    width: 100%;
+    max-width: 650px;
+    height: 435px;
+}
+
+.discount-ad {
+    padding: 100px;
+}
+
+.discount-ad .title-text {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(205, 29, 46);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.discount-ad .big-text {
+    text-align: center;
+
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.discount-ad .text-normal {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+.discount-ad .buttons a{
+    display: inline-flex;
+    margin: 15px;
+    padding: 6px 15px;
+    font-size: 13px;
+    background-color: rgb(192,176,161);
+    font-weight: bold;
+    border: 1px solid #333;
+    border-radius: 25px;
+}
+
+.discount-ad .buttons:hover a:hover{
+    box-shadow: 0 0 15px #333;
+}
+
+.discount-ad .small-text {
+    text-align: center;
+
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+/* Returns Section */
+#returns {
+    width: 700px;
+    margin: auto;
+    background-color: rgb(99, 82, 67);
+    color: rgb(252, 250, 247);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(252, 250, 247);
+}
+
+.text-normal {
+    text-align: center;
+    font-size: 13px;
+    color: rgb(252, 250, 247);
+}
+
+/* Products Section */
+#products {
+    padding: 15px;
+}
+
+.title-text-2 {
+    font-size: 15px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-group {
+    display: flex;
+}
+
+.product-card {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+    max-width: 204px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+    width: 100%;
+    display: block;
+}
+
+.image-text {
+    background-color: black;
+    box-shadow: 0 0 15px #333;
+    color: rgb(252, 250, 247);
+    padding: 5px;
+    font-size: 14px;
+}
+
+.product-title {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Sale Section */
+#sale {
+    background-color: rgb(205, 29, 46);
+    color: rgb(252, 250, 247);
+    padding: 15px;
+    text-align: center;
+}
+
+.big-text {
+    margin: 20px;
+    font-size: 40px;
+}
+
+.text-normal {
+    font-size: 12px;
+}
+
+.sale-card p{
+    color:rgb(252, 250, 247);
+}
+
+.sale-card .buttons a {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 15px;
+    background-color: rgb(205, 29, 46);
+    border: 1px solid rgb(252, 250, 247);
+    color: rgb(252, 250, 247);
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.sale-card .buttons:hover a:hover{
+    box-shadow: 0 0 15px #333;
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(192,176,161);
+    margin-top: 20px;
+}
+
+.footer-col .text-normal{
+    font-size: 14px;
+    color: #333;
+}
